@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab-ExtraBold";
+  src: url("../fonts/RobotoSlab-ExtraBold.eot");
+  src: local("Roboto-Slab-ExtraBold"), local("Roboto-Slab-ExtraBold"), url("../fonts/RobotoSlab-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab-ExtraBold.woff2") format("woff2"), url("../fonts/RobotoSlab-ExtraBold.woff") format("woff"), url("../fonts/RobotoSlab-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab-ExtraBold";
+  src: url("fonts/RobotoSlab-ExtraBold.eot");
+  src: local("☺"), url("fonts/RobotoSlab-ExtraBold.woff") format("woff"), url("fonts/RobotoSlab-ExtraBold.ttf") format("truetype"), url("fonts/RobotoSlab-ExtraBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../Roboto-Regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../Roboto-Regular.woff") format("woff"), url("../Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../Roboto-Medium.eot");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../Roboto-Medium.woff") format("woff"), url("../Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../Roboto-Bold.eot");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../Roboto-Bold.woff") format("woff"), url("../Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../Roboto-Light.eot");
+  src: local("Roboto Light"), local("Roboto-Light"), url("../Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../Roboto-Light.woff") format("woff"), url("../Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glyphter";
+  src: url("../fonts/Glyphter.eot");
+  src: url("../fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("../fonts/Glyphter.woff") format("woff"), url("../fonts/Glyphter.ttf") format("truetype"), url("../fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*=icon-]:before {
+  display: inline-block;
+  font-family: "Glyphter";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telegram:before {
+  content: "A";
+}
+
+.icon-vk:before {
+  content: "B";
+}
+
+.icon-github:before {
+  content: "C";
+}
+
+.icon-email:before {
+  content: "D";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.navbar {
+  margin-top: 1%;
+}
+.navbar .navbar-brand {
+  margin-left: 1%;
+  font-family: Montserrat;
+  font-size: 46px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar ul li {
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
+}
+.navbar ul li a {
+  color: #ffffff;
+}
+.navbar ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.top-header {
+  min-height: 100vh;
+  padding-top: 50px;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 152, 155) 0.1%, rgb(0, 94, 120) 94.2%);
+}
+.top-header .autor-name {
+  padding-top: 5%;
+  padding-left: 7%;
+  font-family: RobotoSlab-ExtraBold;
+  font-size: 46px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top-header .my-photo {
+  width: 20%;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top-header .my-photo:hover {
+  filter: brightness(80%);
+  transition: all 1.8s ease;
+  transform: scale(1.05);
+  transition: 1s;
+}
+.top-header .specialty-name {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 156px;
+  color: #E8E8E8;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.top-header .social-contact {
+  margin-top: 3%;
+}
+.top-header .social-contact a {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  display: flex;
+}
+.top-header .social-contact a i {
+  font-size: 36px;
+  align-self: center;
+  color: #ffffff;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  margin: 0 auto;
+}
+.top-header .social-contact a i::before {
+  display: inline-block;
+  text-decoration: none;
+}
+.top-header .social-contact a:hover i {
+  transform: scale(1.1);
+}
+.top-header .arrow-to-bottom {
+  position: relative;
+  cursor: pointer;
+  margin: 20px;
+  margin-top: 5%;
+  width: 66px;
+  height: 30px;
+}
+.top-header .arrow-to-bottom .arrow-to-bottom-left {
+  position: absolute;
+  background-color: transparent;
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 10px;
+  display: block;
+  transform: rotate(35deg);
+  float: right;
+  border-radius: 2px;
+}
+.top-header .arrow-to-bottom .arrow-to-bottom-left::after {
+  content: "";
+  background-color: #ffffff;
+  width: 40px;
+  height: 10px;
+  display: block;
+  float: right;
+  border-radius: 6px 10px 10px 6px;
+  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  z-index: -1;
+}
+.top-header .arrow-to-bottom .arrow-to-bottom-right {
+  position: absolute;
+  background-color: transparent;
+  top: 10px;
+  left: 26px;
+  width: 40px;
+  height: 10px;
+  display: block;
+  transform: rotate(-35deg);
+  float: right;
+  border-radius: 2px;
+}
+.top-header .arrow-to-bottom .arrow-to-bottom-right::after {
+  content: "";
+  background-color: #ffffff;
+  width: 40px;
+  height: 10px;
+  display: block;
+  float: right;
+  border-radius: 10px 6px 6px 10px;
+  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+}
