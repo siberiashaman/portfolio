@@ -24,7 +24,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Об авторе</a>
+                                <a class="nav-link" href="#competetion">Об авторе</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Портфолио</a>
@@ -50,86 +50,103 @@
                         href="#"><i class="icon-vk"></i></a><a href="#"><i class="icon-github"></i></a><a href="#"><i
                             class="icon-email"></i></a></p>
                 <div class="mx-auto d-block text-center arrow-to-bottom">
-                    <span class="arrow-to-bottom-left"></span>
-                    <span class="arrow-to-bottom-right"></span>
+                    <a href="#competetion"><span class="arrow-to-bottom-left"></span>
+                        <span class="arrow-to-bottom-right"></span></a>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 competetion">
-
+            <div id="competetion" class="col-12 mx-auto d-block text-center">
+                <h2>Используемые навыки</h2>
+                <div class="container overflow-hidden">
+                    <div class="row gy-5 justify-content-center">
+                        <div class="col-3">
+                            <div class="p-3 skills-box">
+                                <img class="mx-auto d-block" src="img/html.svg" alt="">
+                                <p class="skills-box-title">Html</p>
+                                <p class="skills-box-description">Адаптивная кроссбраузерная верстка</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="p-3 skills-box">
+                                <img class="mx-auto d-block" src="img/bootstrap.svg" alt="">
+                                <p class="skills-box-title">Bootstrap</p>
+                                <p class="skills-box-description">Верстка с использованием данного css фреймворка</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="p-3 skills-box">
+                                <img class="mx-auto d-block" src="img/wordpress.svg" alt="">
+                                <p class="skills-box-title">Wordpress</p>
+                                <p class="skills-box-description">Натяжка верстки на CMS Wordpress</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-1 mb-5 gy-5 justify-content-center">
+                        <div class="col-3">
+                            <div class="p-3 skills-box">
+                                <img class="mx-auto d-block" src="img/joomla.svg" alt="">
+                                <p class="skills-box-title">Joomla</p>
+                                <p class="skills-box-description">Создание шаблонов CMS Joomla</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="p-3 skills-box">
+                                <img class="mx-auto d-block" src="img/django.svg" alt="">
+                                <p class="skills-box-title">Django</p>
+                                <p class="skills-box-description">Верстка для фреймворка Django</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="p-3 skills-box">
+                                <img class="mx-auto d-block" src="img/js.svg" alt="">
+                                <p class="skills-box-title">JavaScript</p>
+                                <p class="skills-box-description">Создание простых анимаций для оживления верстки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="portfolio" class="col-12 mx-auto d-block text-center">
+                <h2>Мои последние работы</h2>
             </div>
         </div>
     </div>
-
+    <button type="button" class="btn btn-info" id="btn-back-to-top">
+    </button>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 
 </html>
-
-
-
-
-<div class="glavvrach">
-    <div class="row">
-    <div class="col col-xl-3"><img src="images/glavvrach.jpg" alt="" width="257" height="257" loading="lazy" data-path="local-images:/glavvrach.jpg" /></div>
-    <div class="col col-xl-9">
-    <p class="glavvrach-dolznost">ГЛАВНЫЙ ВРАЧ</p>
-    <p class="glavvrach-fio">Скибина Светлана Анатольевна</p>
-    <p>352380, Россия, Краснодарский край, Кавказский район, г.Кропоткин, ул. Ленина, 157 <br /> <strong>тел/факс:</strong> +7 (861-38) 6-49-85, 4-07-30, 6-12-50 <br /> <strong>e-mail:</strong> ssmp.kav@miackuban.ru</p>
-    <p><strong>Время работы:</strong> с 8.00 до 17.00 (выходной: суббота, воскресенье). Прием граждан по личным вопросам четверг с 14.00 до 16.00</p>
-    <p>В ГБУЗ "ССМП Кавказского района" МЗ КК под руководством главного врача Скибиной Светланы Анатольевны работает дружный, сплоченный коллектив. Все врачи и фельдшера имеют сертификаты по "Скорой и неотложной помощи". Коллектив постоянно пополняется молодыми специалистами, выпускниками КМК, которые в процессе учебы проходят практику на ССМП. Опытные фельдшера и врачи являются наставниками для молодых специалистов и передают им свой опыт и знания. В ГБУЗ "ССМП Кавказского района" МЗ КК регулярно проводятся занятия и врачебные конференции для совершенствования знаний работников</p>
-    </div>
-    </div>
-    </div>
-    <div class="ruk-slogan"><span>В кадровый состав станции входят опытные юристы, экономисты, специалисты по кадровой работе, инженер по охране труда</span></div>
-    <div class="row">
-    <div class="row justify-content-center">
-    <div class="col col-xl-3 kadr-sostav">
-    <p class="kadr-fio">Набока Нина Ильнична</p>
-    <p class="kadr-dolzn">Заведующий оперативным отделом</p>
-    <p class="kadr-contact"><strong>тел/факс:</strong> +7 (861-38) 6-41-25</p>
-    </div>
-    <div class="col col-xl-3 kadr-sostav">
-    <p class="kadr-fio">Гринько Елена Михайловна</p>
-    <p class="kadr-dolzn">Главный фельдшер</p>
-    <p class="kadr-contact"><strong>тел/факс:</strong> +7 (861-38) 6-49-85</p>
-    </div>
-    <div class="col col-xl-3 kadr-sostav">
-        <p class="kadr-fio">Сопова Алена Владимировна</p>
-        <p class="kadr-dolzn">Главный экономист</p>
-        <p class="kadr-contact"><strong>тел/факс:</strong> +7 (861-38) 4-05-28<br /> <strong>e-mail:</strong> sopova.alena@bk.ru</p>
-        </div>
-    <div class="row justify-content-center">
-
-   <div class="col col-xl-3 kadr-sostav">
-    <p class="kadr-fio">Некрасова Светлана Александровна</p>
-    <p class="kadr-dolzn">Главный бухгалтер</p>
-    <p class="kadr-contact"><strong>тел/факс:</strong> +7 (86138) 4-04-53</p>
-    </div>
-    <div class="col col-xl-3 kadr-sostav">
-    <p class="kadr-fio">Коренев Вячеслав Николаевич</p>
-    <p class="kadr-dolzn">Специалист по гражданской обороне</p>
-    <p class="kadr-contact"><strong>тел/факс:</strong> +7 (861-38) 6-12-50</p>
-    </div>
-    <div class="col col-xl-3 kadr-sostav">
-        <p class="kadr-fio">Стукало Мариами Шотовна</p>
-        <p class="kadr-dolzn">Главный специалист отдела кадров</p>
-        <p class="kadr-contact"><strong>тел/факс:</strong> +7 (861-38) 6-12-50<br /> <strong>e-mail:</strong> otdel_kadrovssmp@mail.ru</p>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-    <div class="col col-xl-3 kadr-sostav">
-    <p class="kadr-fio">Левченко Наталия Владимировна</p>
-    <p class="kadr-dolzn">Главный специалист отдела ИиВТ</p>
-    <p class="kadr-contact"><strong>тел/факс:</strong> +7 (861-38) 4-05-28<br /> <strong>e-mail:</strong> otdel_iivt@bk.ru</p>
-    </div>
-    <div class="col col-xl-3 kadr-sostav">
-    <p class="kadr-fio">Павленко Александр Петрови</p>
-    <p class="kadr-dolzn">Юрисконсульт</p>
-    <p class="kadr-contact"><strong>тел/факс:</strong> +7 (861-38) 4-05-28<br /> <strong>e-mail:</strong> uristssmp@bk.ru</p>
-    </div>
-    </div>
-    </div>

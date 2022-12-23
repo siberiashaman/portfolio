@@ -14,6 +14,8 @@ $black: #000000;
 $red: #D90000;
 $white: #ffffff;
 $gray: #EBEBF2;
+$blue: #007a9c;
+$gradient: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 152, 155, 1) 0.1%, rgba(0, 94, 120, 1) 94.2%);
 
 html {
     scroll-behavior: smooth;
@@ -34,6 +36,14 @@ a {
     transition: all 0.4s ease;
     text-decoration: none;
 }
+h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    color: $white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 // Navbar
 .navbar {
     margin-top: 1%;
@@ -43,6 +53,10 @@ a {
         font-size: 46px;
         color: $white;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+            transform:rotate(20deg);
+            transition: transform .8s ease-in-out;  
+        }
     }
     ul li {
         font-size: 32px;
@@ -66,7 +80,7 @@ a {
 .top-header {
     min-height: 100vh;
     padding-top: 50px;
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 152, 155, 1) 0.1%, rgba(0, 94, 120, 1) 94.2%);
+    background-image: $gradient;
 
     .autor-name {
         padding-top: 5%;
@@ -183,7 +197,56 @@ a {
                 border-radius: 10px 6px 6px 10px;
                 transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
             }
+
         }
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s  
+        }    
     }
 
 }
+#competetion {
+    min-height: 100vh;
+    background-color: $blue;
+    .skills-box {
+        background-image: $blue;
+        color: $white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        min-height: 240px;
+        img {
+            width: 30%;
+            margin-bottom: 15px;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.4s;
+                -webkit-transition: all 0.4s  
+            }   
+        }
+        .skills-box-title {
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .skills-box-description {
+            font-size: 20px;
+        }
+    }
+}
+#portfolio {
+    min-height: 100vh;
+    background-image: $gradient;
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
