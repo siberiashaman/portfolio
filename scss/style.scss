@@ -211,7 +211,7 @@ h2{
     min-height: 100vh;
     background-color: $blue;
     .skills-box {
-        background-image: $blue;
+        background: #027696;;;
         color: $white;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border: 1px solid rgba(0, 0, 0, 0.25);
@@ -233,6 +233,7 @@ h2{
         .skills-box-description {
             font-size: 20px;
         }
+        
     }
 }
 #portfolio {
